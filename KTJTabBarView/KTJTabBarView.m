@@ -42,7 +42,10 @@
     self.selectStatusViewHeight = 2;
     
     _scrollView = [[UIScrollView alloc] init];
+    _scrollView.showsHorizontalScrollIndicator = NO;
+    _scrollView.showsVerticalScrollIndicator = NO;
     [self addSubview:_scrollView];
+    
     self.selectStatusView = [[UIView alloc] init];
     self.selectStatusView.backgroundColor = [UIColor redColor];
 }
